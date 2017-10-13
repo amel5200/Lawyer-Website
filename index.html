@@ -2,9 +2,67 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Layout</title>
+<link rel="stylesheet" href="layout.css" type="text/css">
 </head>
-
 <body>
+<!--Wrapper sets the layout width-->
+<div id="wrapper">
+
+
+<div id="branding">
+<img src="images/bbImg2.jpg" alt="logo" style=" width:100%;"/>
+<a style="top:1em; right:8em;" href="news.html"> News</a>
+
+<a style="top:1em; right:2em;" href="contact.html">Contact Us</a>
+
+</div><!--End branding-->
+
+
+<div id="navbar">
+	<ul>
+		<li class="selected"><a href="#"> Home</a></li>
+		<li><a href="#"> About</a>
+    <ul><!-- start dropdown menu-->
+  		<li><a href="#"> About option 1</a></li>
+        <li><a href="#"> About option 2</a></li>      
+        <li><a href="#"> About option 3</a></li>
+      </ul>  
+        </li>
+		<li><a href="#"> Links</a>    <ul><!-- start dropdown menu-->
+  		<li><a href="#"> Links option 1</a></li>
+        <li><a href="#"> Links option 2</a></li>      
+        <li><a href="#"> Links option 3</a></li>
+      </ul>  </li>
+		<li><a href="#"> Portfolio</a></li>
+	</ul>
+</div><!--End navbar-->
+
+<div id="leftcolumn">
+I am in the leftcolumn division.
+</div><!--End leftcolum-->
+
+<div id="content">
+<p><h1>Lorem ipsum </h1>dolor sit amet, consectetur adipiscing elit Ut sodales ac mi egestas iaculis. Vivamus rhoncus enim sed lorem auctor, et maximus nulla dignissim. Vestibulum placerat non nisi vel placerat. Ut vehicula est nec dui euismod pellentesque. Ut nunc nisl, placerat a fringilla quis, blandit ut nulla. </p>
+
+<ul>
+<li>Pellentesque a magna libero. </li>
+<li>Sed ut orci mattis, commodo risus sed,ipsum.</li>
+<li> In et tincidunt mauris, vel blandit tellus.</li>
+</ul>
+
+
+<p><h2>Fusce ut dui cursus, auctor leo vel, venenatis justo.</h2> Integer tristique eleifend porttitor. Integer ut sodales risus.  </p>
+
+<p><h3>Sed commodo augue vitae commodo vehicula. </h3>Sed mollis orci tortor, a pretium ipsum porttitor vitae.</p>
+
+
+</div><!--End content-->
+
+<div id="footer">
+I am in the footer divion
+</div><!--End footer-->
+
+</div><!--End wrapper-->
 </body>
 </html>
