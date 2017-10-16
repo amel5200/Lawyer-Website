@@ -6,38 +6,23 @@
 <title>Melnick and Shamus at Law</title>
 <style>
 	body {
-	background-color:#117b6f;
-	/*background-image:url(fabric01.jpg);*/
+	background-color:#d9d4ce;
 	font-family:Helvetica,;
 	}
-	/*Universal style role*/
+	
 	*{
-	/*Block all browser defau;t margins*/
 	margin:0;
 	padding:0;
-	/*Temp border*/
-	/*border:dashed 1px #f00;*/
 	}
 	
 	#wrapper {
 	width:50em;
-	background-color:#B0FFF0;
-	/*Center*/
+	background-color:#aa9f92;
 	margin:0 auto;
-	/*put 20px margin above wrapper
-	set rifht and left to auto*/
 	margin:20px auto 0 auto;
 	}
 	
-	#leftcolumn {
-	width:14em;
-	float:left;
-	padding-top:1em;
-	
-	}
-	
 	#content {
-	margin-left:14em;
 	background-color:#fff;
 	color:#000;
 	padding:10px 20px; 
@@ -51,17 +36,6 @@
 	font-variant:small small-caps;
 	letter-spacing:0.08em;
 	}
-	
-	/*
-	#content h1 {
-	font-family:Charcoal,Impact, sans-serif;
-	color:#806659;
-	font-weight:normal;
-	font-style:italic;
-	font-variant:small small-caps;
-	letter-spacing:0.08em;
-	}
-	*/
 	
 	#content h1 {
 	font-size:2em;
@@ -84,7 +58,6 @@
 	line-height:1.5em;
 	}
 	
-	
 	#branding {
 	height:6em;
 	background-color:#553c35;
@@ -105,62 +78,48 @@
 	font-size:0.8em;
 	}
 	
-	/*Unvisited and visted links in branding bar*/
 	#branding a:link, #branding a:visited {
 	color:#000;
 	}
 	
-	/*Hover links in branding bar*/
 	#branding a:hover {
 	color:#0f0;
 	}
 	
-	/*Active link in branding bar*/
 	#branding a:active {
 	color:#1bb498;
 	}
 	
-	/*Navbar division*/
 	#navbar {
 	background-color:#aaa;
-	padding-top:0em;
-	
-	/*Left margin must match leftcolumn width*/
-	margin-left:14em;
+	padding-top:0em;	
 	height:1.6em;
-	background:#aaa url(images/navbak.jpg) repeat-x center;
+	background:#aaa repeat-x center;
 	}
 	
-	/*Fixes the mysterious gap*/
 	#branding img {
 	display:block;
 	}
 	
-	/*Remove bullets from ul in navbar*/
 	#navbar ul {
 	list-style-type:none;
 	}
 	
-	/*List items in the navbar*/
 	#navbar li {
 		float:left;
-		/*Required for drop-dow n menus*/
 		position:relative;
 	}
 	
-	/*Applies to drop-down menus in navbar*/
 	#navbar li ul {
 		position:absolute;
 		z-index:100;
 		visibility:hidden;
 	}
 	
-	/*Make drop-downs visible on navbar hover*/
 	#navbar li:hover ul {
 		visibility:visible;
 	}
 	
-	/*Applies tto link on the drop-down menu*/
 	#navbar li:hover ul li a {
 		background:#ccc;
 		color:#000;
@@ -171,19 +130,17 @@
 		height:auto;
 	}
 	
-	/*Hover on drop-down meny links*/
 	#navbar li:hover ul li a:hover {
 		background:#aaa;
 		color:#000;
 	}
 	
-	/*Applies to navbar links, visted and unvisited*/
 	#navbar a,#navbar a:link, #navbar a:visited{
 	text-decoration:none;
 	font-family:Verdana,Geneva,Arial,Sans-Serif;
 	font-size:80%;
 	color:#000;
-	background-color:#aaa url(images/navbak.jpg) repeat-x center;
+	background-color:#aaa repeat-x center;
 	display:block;
 	height:2em;
 	width:6em;
@@ -192,70 +149,64 @@
 	line-height:2em;
 	}
 	
-	/*Navbar hover and active links*/
 	#navbar a:hover,#navbar a:active, #navbar li.selected a:link, #navbar li.selected a visited{
-	background:#ddd url(images/navhover.jpg) repeat-x center;
+	background:#ddd repeat-x center;
 	color:#000;
 	}
+	
+	#footer {
+	background-color:#aaa;
+	padding:.6em;
+	}
+	
 </style>
 </head>
 <body>
-<!--Wrapper sets the layout width-->
 <div id="wrapper">
-
 
 <div id="branding">
 <img src="images/logo.png" alt="logo" style="width:100%; height:100%"/>
-<a style="top:1em; right:8em;" href="news.html">News</a>
-<a style="top:1em; right:2em;" href="contact.html">Contact Us</a>
-</div><!--End branding-->
-
-<div id="leftcolumn">
-I am in the leftcolumn division.
-</div><!--End leftcolum-->
+</div>
 
 <div id="navbar">
 	<ul>
-    	<li class="selected"><a href="#">Home</a></li>
-		<li><a href="#">About</a>
-        	<ul><!--Start About drop=down menu-->
-            	<li><a href="#">About Option 1</a></li>
-                <li><a href="#">About Option 2</a></li>
-                <li><a href="#">About Option 3</a></li>
+    	<li class="selected"><a href="index.html">Home</a></li>
+			<li><a href="#">About us</a>
+        	<ul>
+            	<li><a href="#"> Our Team </a></li>
+                <li><a href="#">Why Choose Us</a></li>
+                <li><a href="#">Blog</a></li>
         	</ul>
-        </li><!--End About Menu-->    
-        <li><a href="#">Links</a>
-        	<ul><!--Start Link drop=down menu-->
-            	<li><a href="#">Link Option 1</a></li>
-                <li><a href="#">Link Option 2</a></li>
-                <li><a href="#">Link Option 3</a></li>
+        </li>   
+        <li><a href="#">Cases</a>
+        	<ul>
+            	<li><a href="#">Personal Injury</a></li>
+                <li><a href="#">Criminal Defense</a></li>
+                <li><a href="#">Family Law</a></li>
         	</ul>
-        </li><!--End Link Menu-->
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact Us</a></li>
     </ul>
-</div><!--End navbar-->
+</div>
 
 <div id="content">
-<p><h1>Lorem ipsum</h1> dolor sit amet, consectetur adipiscing elit. Ut sodales ac mi egestas iaculis. Vivamus rhoncus enim sed lorem auctor, et maximus nulla dignissim. Vestibulum placerat non nisi vel placerat. Ut vehicula est nec dui euismod pellentesque. Ut nunc nisl, placerat a fringilla quis, blandit ut nulla. </p>
+<h1>Lorem ipsum</h1> dolor sit amet, consectetur adipiscing elit. Praesent in neque tristique, semper sapien a, convallis metus. Nunc luctus, sem ut viverra aliquet, mauris nunc eleifend ante, sit amet fermentum orci nulla et ipsum. Phasellus aliquam felis cursus nunc scelerisque, at lobortis odio tincidunt. Cras elementum nulla sit amet est pulvinar vehicula. Nulla sit amet convallis leo. Donec cursus ultricies arcu quis iaculis. Nunc ut ultricies velit. Nunc in porttitor magna, et suscipit est. Maecenas ut finibus lorem.
+<p>
+<h2>Pellentesque fermentum</h2> ex eget justo ornare pulvinar a semper urna. Aenean tincidunt, elit faucibus consequat blandit, magna dui hendrerit ipsum, ut bibendum purus mauris sit amet felis. Aliquam congue bibendum augue, quis vestibulum ligula vestibulum sed. Phasellus porta congue nisl, vel imperdiet diam fringilla sit amet. Vivamus et diam dolor. Nulla iaculis purus sed fringilla pulvinar. Sed eleifend ex vitae urna pretium tempor porta at erat. Donec molestie ante dolor, quis lacinia tellus blandit nec.
+<p>
+<h3>Aliquam nec bibendum</h3> risus, ac scelerisque nisi. Quisque vel dolor et nulla pharetra sagittis ut sed lectus. Nulla ultricies nulla a purus semper, quis dignissim dui hendrerit. Duis pharetra nisl non efficitur auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec lacinia purus eu purus mollis, eget bibendum ipsum auctor. Curabitur non augue sit amet lorem rhoncus pulvinar sit amet et mi. Donec suscipit, mi et porttitor dictum, diam nisl varius ante, malesuada auctor orci nisl in urna. Sed volutpat mi vitae libero cursus, sit amet mattis ipsum posuere.
+<p>
+<h4>Phasellus finibus</h4> et erat sed interdum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean ut felis a elit egestas semper in vel risus. Nunc in sem vestibulum, porttitor diam eu, gravida eros. Donec volutpat interdum sapien lacinia imperdiet. Vestibulum vel porta ligula. Etiam feugiat urna eu enim feugiat eleifend. Duis id posuere ex. Aenean dignissim convallis orci at tempus. Nunc laoreet interdum rutrum. Praesent aliquam aliquam ex. Mauris porttitor pulvinar nulla, ac efficitur leo fermentum ac. Maecenas placerat eros viverra nulla ultricies, id semper lectus iaculis. Sed ac quam laoreet, vehicula urna sed, venenatis nibh.
+<p>
+<h5>Vivamus eleifend</h5> posuere mi, sed tristique metus sollicitudin at. Sed dignissim justo vitae auctor lobortis. Praesent nibh leo, cursus vitae pretium et, auctor a ante. Suspendisse dignissim turpis non nulla volutpat, nec pellentesque purus vestibulum. Nullam in justo vehicula, lobortis magna tincidunt, sodales quam. Aenean posuere cursus mauris sit amet congue. Morbi rhoncus ut lorem sed pellentesque.
+<p>
+<h6>Morbi aliquam</h6>ex lacinia sollicitudin ullamcorper, sem dui semper sapien, quis sagittis tellus neque vel odio. Donec quis enim sit amet justo rhoncus hendrerit et eu nulla. Morbi ac quam feugiat, fermentum neque id, scelerisque orci. Suspendisse volutpat ullamcorper augue, quis pharetra tellus. Duis id scelerisque nisi, eget pharetra lectus. Proin efficitur scelerisque nisi, nec dapibus dolor elementum id. Nullam eget pretium odio. Ut laoreet lorem sed dapibus vehicula. Morbi sed rutrum eros. Curabitur vel pharetra tortor. Cras ut risus et neque tempus ullamcorper suscipit faucibus tortor. Praesent dictum ac orci quis tempus. Aliquam in leo ornare, auctor ex id, efficitur leo. Mauris id enim molestie, rhoncus purus vestibulum, venenatis ipsum. Nullam placerat vehicula dolor, eget mattis velit pellentesque id.
 
-<ul>
-<li>Pellentesque a magna libero. </li>
-<li>Sed ut orci mattis, commodo risus sed,ipsum.</li>
-<li> In et tincidunt mauris, vel blandit tellus.</li>
-</ul>
-
-
-<p><h2>Fusce ut</h2> dui cursus, auctor leo vel, venenatis justo. Integer tristique eleifend porttitor. Integer ut sodales risus. </p>
-
-<p><h3>Sed mollis</h3> orci tortor, a pretium ipsum porttitor vitae. Sed commodo augue vitae commodo vehicula.</p> 
-
-
-</div><!--End content-->
+</div>
 
 <div id="footer">
-I am in the footer divion
-</div><!--End footer-->
+Legal Disclaimer: Melnick and Shamus at law is not a real law firm, nor are either Melnick and Shamus actual lawyers. Do not use any advice these guys suggest. They are just two idiots in a web design class. Get a real lawyer.
+</div>
 
-</div><!--End wrapper-->
+</div>
 </body>
 </html>
